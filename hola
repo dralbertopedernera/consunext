@@ -1,0 +1,633 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    margin-top: 0; /* Optional */
+  }
+  
+  .hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px; /* Adjust bottom padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.hero-image {
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75; /* Slightly see-through to enhance the text on top */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #003366;
+}
+/* styles.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.about-doctor {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    color: #333;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bio h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        text-align: center;
+    }
+}
+/* styles.css */
+.services {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-item {
+    flex-basis: 30%; /* Adjust the width for responsiveness */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+/*Fotos de tratamientos*/
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+/*Modifica la galeria de servicios*/
+h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    position:relative;
+    left:100px
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex-basis: 100%;
+    }
+}
+/* styles.css */
+.results-gallery {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex-basis: 45%; /* Adjust based on screen size */
+    margin: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 49%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex-basis: 100%;
+    }
+    
+    .gallery-image {
+        width: 100%;
+    }
+}
+/* styles.css */
+.blog-section {
+    background-color: #f8f8f9;
+    padding: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article-item {
+    flex-basis: 45%; /* Adjust based on screen size */
+    background: #fff;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    position: relative;
+    left:-100px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #003366;
+}
+
+@media (max-width: 768px) {
+    .articles {
+        flex-direction: column;
+    }
+    
+    .article-item {
+        flex-basis: 100%;
+    }
+}
+/* styles.css */
+.site-footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column1 {
+    flex: 1 1 200px; /* Flex basis of 200px */
+    margin: 10px;
+    position:relative;
+    right:50px;
+}
+.footer-contact{
+    position:relative;
+    right:1px;
+}
+.footer-links {
+    list-style: none;
+    position: relative;
+    right: 100px;
+}
+
+
+.footer-links a,
+.social-links a,
+.legal-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.social-links a:hover,
+.legal-links a:hover {
+    color: #f8f9fa;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-columns,
+    .footer-bottom {
+        text-align: center;
+    }
+    .footer-column {
+        flex: 1 1 100%; /* Take full width on small screens */
+    }
+}
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+/*Controla el margen superior*/
+header {
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px; /* Ajustar según el tamaño del logo real */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info {
+    position:relative;
+    display: flex;
+    align-items: center;
+    color:#f4f4f4;
+}
+
+.contact-info img {
+    margin-left: 0px;
+    
+}
+
+.numerotel {
+    
+    position: relative;
+    top:1px;
+    left: 350px;
+
+    font-size: 16px;
+    
+}
+.telefono-img{
+    
+    position: relative;
+    top:1px;
+    left: 335px
+}
+.direccion{
+    position:relative;
+    top:1px;
+    
+    left: 385px;
+    font-size: 16px;
+}
+.direccion-img{
+    position:relative;
+    top:1px;
+    left: 375px;
+    
+}
+
+.menu{
+    display: flex;
+    position: relative;
+}
+
+.site-footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-columns {
+    display: flex;
+    width: 100%; /* Asegura que el contenedor de columnas use todo el ancho disponible */
+    justify-content: left; /* Centra las columnas horizontalmente */
+    flex-wrap: wrap;
+}
+
+.footer-column1 {
+    position: relative;
+    left:400px;
+
+
+    text-align: left; /* Alinea el texto a la izquierda dentro de las columnas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alineación vertical de los contenidos de la columna */
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: 1 1 100%; /* Toma el ancho completo en pantallas pequeñas */
+    }
+}
+/* Style for Dropdown Menus */
+.dropdown {
+    display: none; /* Hide the dropdown */
+    position: absolute; /* Position it directly below the parent */
+    background-color: #f9f9f9; /* Light background for the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow */
+    z-index: 1; /* Ensure it's on top */
+    color:black;
+}
+
+/* Style for Dropdown Menu Items */
+.dropdown li {
+    display: block; /* Dropdown items should stack vertically */
+}
+
+/* Display Dropdown on Hover */
+#flebologia-menu:hover .dropdown,
+#turnos-menu:hover .dropdown,
+#novedades-menu:hover .dropdown {
+    display: block; /* Show the dropdown when hovering */
+}
+
+/* Hover effect for main menu items */
+nav li a:hover {
+    background-color: #007bff; /* Darker background on hover */
+    border-radius: 3px; /* Slight rounding of corners */
+}
+
+/* Optional: Add a small arrow indicator for dropdowns */
+nav li:after {
+    content: '▼'; /* Unicode arrow symbol */
+    font-size: 10px; /* Smaller arrow */
+    margin-left: 5px; /* Space it a bit from the menu text */
+}
+
+/* Reset arrow indicator for dropdown items */
+.dropdown li:after {
+    content: none; /* No arrows for dropdown items */
+}
+
+/* Estilo para los elementos dentro del menú desplegable */
+.dropdown a {
+    font-size: 15px;
+    font-weight: 100;
+    color: black; /* Color de texto para los enlaces desplegables */
+    padding: 10px 15px; /* Espaciado para que los enlaces sean más accesibles */
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+    display: block; /* Hacer que cada enlace ocupe toda la línea para un mejor área de clic */
+}
+
+/* Estilo para los elementos dentro del menú desplegable al pasar el ratón */
+.dropdown a:hover {
+    background-color: #afafaf; /* Color de fondo ligeramente diferente al pasar el ratón */
+}
