@@ -9,7 +9,7 @@ export default function Footer() {
             <h3 className="contacto">Contacto</h3>
             <ul className="footer-contact">
               <li>
-                <a>Teléfono: 3876140016</a>
+                <a>Teléfono: 3872288720</a>
               </li>
               <li>
                 <a>Email: albertojosepedernera@hotmail.com</a>

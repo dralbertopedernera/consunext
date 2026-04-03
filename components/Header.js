@@ -37,7 +37,7 @@ export default function Header() {
         </nav>
         <div className="contact-info">
           <a
-            href="https://wa.me/5493876140016?text=Hola%2C%20quiero%20reservar%20un%20turno%20con%20el%20Dr%20Pedernera"
+            href="https://wa.me/5493872288720?text=Hola%2C%20quiero%20reservar%20un%20turno%20con%20el%20Dr%20Pedernera"
             className="telefono-link"
             aria-label="WhatsApp"
           >
@@ -51,9 +51,9 @@ export default function Header() {
           </a>
           <a
             className="numerotel"
-            href="https://wa.me/5493876140016?text=Hola%2C%20quiero%20reservar%20un%20turno%20con%20el%20Dr%20Pedernera"
+            href="https://wa.me/5493872288720?text=Hola%2C%20quiero%20reservar%20un%20turno%20con%20el%20Dr%20Pedernera"
           >
-            3876140016
+            3872288720
           </a>
           <img src="/mapa.png" width="20" height="20" className="direccion-img" alt="Mapa" />
           <span className="direccion">
